@@ -6,6 +6,22 @@
     <title>Parcel Sandbox</title>
 </head>
 <body>
-    
+    <div id="app">Hello</div>
+    <p class="param">First Paragraph</p>
+    <p class="param">First Paragraph2</p>
+    <p><span style="font-weight: bold;">First</span> Paragraph3</p>
+    <script>
+        console.log(document.getElementById("app").innerHTML)
+        document.getElementById("app").innerHTML = "Hello World 2222";
+        console.log(document.getElementsByTagName("div"));
+
+        console.log(document.getElementsByTagName('p'));
+        console.log(document.getElementsByClassName('param'));
+        console.log(document.querySelectorAll('p span'));
+        let elms = document.getElementsByTagName("*");
+        for (let i = 0; i < elms.length; i++) {
+            console.log(elms[i]);
+        }
+    </script>
 </body>
 </html>
